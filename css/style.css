@@ -66,7 +66,7 @@ button:focus{
 }
 /* Header */
 .header{
-    background-color: #050a13;
+    background-color: transparent;
     position:fixed;
     top:0;
     width: 100%;
@@ -75,6 +75,11 @@ button:focus{
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+}
+.header--dark{
+    background-color: var(--color-primary);
+    transition: all 200ms ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .header__logo{
@@ -108,7 +113,7 @@ button:focus{
 }
 /* Home */
 #home{
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-variant);
     color: var(--color-text);
     padding: 5rem 1rem;
     padding-top: 7rem;
