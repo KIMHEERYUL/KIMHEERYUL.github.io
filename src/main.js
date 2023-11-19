@@ -8,7 +8,7 @@ const headerRect = header.getBoundingClientRect();
 console.log(headerRect);
 const headerHeight = headerRect.height;
 document.addEventListener('scroll',() => {
-    console.log(window.scrollY);
+    //console.log(window.scrollY);
     if(window.scrollY> headerHeight){
         header.classList.add('header--dark');
     } else{
